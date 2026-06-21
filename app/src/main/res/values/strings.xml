@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Puzzle Bot</string>
+    <string name="accessibility_description">Bot otomatis untuk menyelesaikan puzzle CAPTCHA geser. Memerlukan izin ini untuk mengeksekusi gesture swipe secara otomatis.</string>
+</resources>

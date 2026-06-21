@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D0D1A"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🧩 Puzzle Bot"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="12dp"
+        android:paddingBottom="4dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bot otomatis CAPTCHA puzzle geser"
+        android:textColor="#888888"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <!-- Status Bar -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚠ Accessibility Service: BELUM AKTIF"
+        android:textColor="#E74C3C"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:background="#1A1A2E"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Tombol Accessibility -->
+    <Button
+        android:id="@+id/btnPermission"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Aktifkan Accessibility Service"
+        android:backgroundTint="#3498DB"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Tombol START / STOP -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="▶  START BOT"
+            android:backgroundTint="#2ECC71"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:enabled="false"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="⏹  STOP BOT"
+            android:backgroundTint="#E74C3C"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:enabled="false"
+            android:layout_marginStart="4dp"/>
+
+    </LinearLayout>
+
+    <!-- Instruksi singkat -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cara pakai: Buka game → tunggu puzzle muncul → tekan START BOT"
+        android:textColor="#AAAAAA"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:paddingBottom="8dp"/>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#2A2A3E"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Label Log -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOG"
+        android:textColor="#888888"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp"/>
+
+    <!-- Log Area -->
+    <ScrollView
+        android:id="@+id/scrollLog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#111122"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#CCCCCC"
+            android:textSize="11sp"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="2dp"/>
+
+    </ScrollView>
+
+</LinearLayout>
